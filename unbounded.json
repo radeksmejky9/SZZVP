@@ -1,0 +1,233 @@
+{
+  "n_vars": 20,
+  "n_cons": 3,
+  "obj_sense": "Maximalizovat",
+  "solver": "PuLP (CBC)",
+  "variables": [
+    {
+      "name": "x1",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x2",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x3",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x4",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x5",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x6",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x7",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x8",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x9",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x10",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x11",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x12",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x13",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x14",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x15",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x16",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x17",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x18",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x19",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x20",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    }
+  ],
+  "objective": {
+    "sense": "Maximalizovat",
+    "coeffs": [
+      3.0,
+      5.0,
+      8.0,
+      8.0,
+      1.0,
+      8.0,
+      4.0,
+      13.0,
+      3.0,
+      15.0,
+      5.0,
+      11.0,
+      8.0,
+      7.0,
+      0.0,
+      4.0,
+      5.0,
+      1.0,
+      6.0,
+      2.0
+    ]
+  },
+  "constraints": [
+    {
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rel": "≤",
+      "rhs": 0.0
+    },
+    {
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rel": "≤",
+      "rhs": 0.0
+    },
+    {
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rel": "≤",
+      "rhs": 0.0
+    }
+  ]
+}

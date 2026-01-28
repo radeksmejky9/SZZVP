@@ -40,22 +40,26 @@ solver_ortools.py      # Implementace pro OR-Tools
 solver_thread.py       # Asynchronní řešení
 requirements.txt       # Seznam Python závislostí
 README.md              # Dokumentace
-test.json              # Ukázkový problém LP
-testhard.json          # Náročnější ukázkový problém
+optimal.json           # Ukázkový problém LP
+optimal2.json          # Náročnější ukázkový problém
+infeasible.json        # Nesplinitelný problém
+unbounded.json         # Neomezený problém
 requirements.txt       # Základní závislosti
 ```
 
 ## Použití
 
-1. **Nastavte počet proměnných a omezení** v horním panelu, případně **načtěte jeden z přiložených souborů (test.json, nebo testhard.json)** pro rychlé otestování funkcionality
+1. **Nastavte počet proměnných a omezení v horním panelu, případně načtěte jeden z přiložených souborů pro rychlé odzkoušení funkcionality** (optimal.json, infeasible.json, unbounded.json, nebo optimal2.json)
 2. **Vyberte řešič**
-3. **Vyplňte tabulky**:
+3. **Zvolte počet proměnných a omezení**
+4. **Vyplňte tabulky**:
    - **Proměnné**: název, dolní/horní mez, typ
    - **Účelová funkce**: koeficienty
    - **Omezení**: koeficienty, relace (≤/≥/=), pravá strana
-4. **Stav tabulek lze kdykoliv uložit.**
-5. **Klikněte na Řešit**
-6. **Zobrazí se výsledky** v novém tabu
+5. **Stav tabulek lze kdykoliv uložit.**
+6. **Klikněte na Řešit**
+7. **V případě, že by řešení trvalo příliš dlouho lze kliknout na tlačítko Nový pro kompletní restart, nebo libovolně upravit hodnoty a zahájit řešení znovu.**
+8. **Zobrazí se výsledky v novém samostatném tabu**
 
 ## Přidání vlastního řešiče
 
