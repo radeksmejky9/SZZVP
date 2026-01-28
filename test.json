@@ -1,0 +1,54 @@
+{
+  "n_vars": 3,
+  "n_cons": 2,
+  "obj_sense": "Maximalizovat",
+  "solver": "PuLP (CBC)",
+  "variables": [
+    {
+      "name": "x1",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x2",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Integer"
+    },
+    {
+      "name": "x3",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    }
+  ],
+  "objective": {
+    "sense": "Maximalizovat",
+    "coeffs": [
+      5.0,
+      3.0,
+      4.0
+    ]
+  },
+  "constraints": [
+    {
+      "coeffs": [
+        2.0,
+        1.0,
+        2.0
+      ],
+      "rel": "≤",
+      "rhs": 20.0
+    },
+    {
+      "coeffs": [
+        3.0,
+        2.0,
+        1.0
+      ],
+      "rel": "≤",
+      "rhs": 18.0
+    }
+  ]
+}

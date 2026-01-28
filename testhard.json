@@ -1,0 +1,181 @@
+{
+  "n_vars": 10,
+  "n_cons": 6,
+  "obj_sense": "Maximalizovat",
+  "solver": "PuLP (CBC)",
+  "variables": [
+    {
+      "name": "x1",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x2",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x3",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x4",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x5",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x6",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x7",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x8",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x9",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    },
+    {
+      "name": "x10",
+      "low": 0.0,
+      "up": null,
+      "vtype": "Continuous"
+    }
+  ],
+  "objective": {
+    "sense": "Maximalizovat",
+    "coeffs": [
+      3.0,
+      5.0,
+      2.0,
+      7.0,
+      4.0,
+      6.0,
+      8.0,
+      1.0,
+      9.0,
+      2.0
+    ]
+  },
+  "constraints": [
+    {
+      "coeffs": [
+        2.0,
+        3.0,
+        1.0,
+        4.0,
+        5.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rel": "≤",
+      "rhs": 20.0
+    },
+    {
+      "coeffs": [
+        1.0,
+        4.0,
+        3.0,
+        2.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rel": "≤",
+      "rhs": 15.0
+    },
+    {
+      "coeffs": [
+        5.0,
+        2.0,
+        0.0,
+        0.0,
+        0.0,
+        3.0,
+        2.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rel": "≤",
+      "rhs": 25.0
+    },
+    {
+      "coeffs": [
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "rel": "≤",
+      "rhs": 18.0
+    },
+    {
+      "coeffs": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.0,
+        3.0,
+        1.0
+      ],
+      "rel": "≤",
+      "rhs": 10.0
+    },
+    {
+      "coeffs": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "rel": "≤",
+      "rhs": 12.0
+    }
+  ]
+}
