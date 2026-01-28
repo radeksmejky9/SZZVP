@@ -62,11 +62,19 @@ requirements.txt       # Základní závislosti
 Nový řešič lze snadno přidat implementací abstraktní třídy AbstractLPSolver. Tím se zachová jednotné rozhraní pro GUI a ostatní funkce programu:
 
 ```python
-from lp_solver import AbstractLPSolver, LPProblem, SolverResult
+from abc import ABC, abstractmethod
+from models import LPProblem, SolverResult
 
-class MyCustomSolver(AbstractLPSolver):
+
+class AbstractLPSolver(ABC):
+    """
+    Abstraktní třída pro LP řešiče.
+    Pokud chcete použít jiný řešič, stačí implementovat tuto třídu.
+    """
+
+    @abstractmethod
     def solve(self, problem: LPProblem) -> SolverResult:
-        # Vaše implementace zde
+        """Řeší LP problém a vrací výsledek"""
         pass
 ```
 

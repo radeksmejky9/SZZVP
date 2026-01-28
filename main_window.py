@@ -109,7 +109,7 @@ class LPWindow(QMainWindow):
             "Nastavte počet proměnných a omezení\n"
             "Vyberte řešič\n"
             "Vyplňte tabulky:\n"
-            " • Proměnné: název, meze, typ (Nezáporné/Celočíselné)\n"
+            " • Proměnné: název, meze, typ (Reálné/Celočíselné)\n"
             " • Účelová funkce: koeficienty pro min/max\n"
             " • Omezení: koeficienty, relace (≤/≥/=), pravá strana\n"
             "Klikněte 'Řešit'\n"
@@ -137,7 +137,7 @@ class LPWindow(QMainWindow):
         n_vars = self.var_spin.value()
         n_cons = self.con_spin.value()
 
-        # VARS
+        # ========== VARS ==========
         self.tab_vars.setColumnCount(4)
         self.tab_vars.setHorizontalHeaderLabels(
             ["Název", "Dolní mez", "Horní mez", "Typ"]
@@ -153,12 +153,12 @@ class LPWindow(QMainWindow):
                 self.tab_vars.setItem(i, 2, QTableWidgetItem(""))
             if self.tab_vars.cellWidget(i, 3) is None:
                 combo = QComboBox()
-                combo.addItems(["Nezáporné", "Celočíselné"])
+                combo.addItems(["Reálné", "Celočíselné"])
                 self.tab_vars.setCellWidget(i, 3, combo)
 
         self.tab_vars.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
 
-        # OBJECTIVE
+        # ========== OBJECTIVE ==========
         self.tab_obj.setRowCount(1)
         self.tab_obj.setColumnCount(n_vars)
         self.tab_obj.setHorizontalHeaderLabels([f"x{i+1}" for i in range(n_vars)])
@@ -167,7 +167,7 @@ class LPWindow(QMainWindow):
                 self.tab_obj.setItem(0, j, QTableWidgetItem("0"))
         self.tab_obj.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
 
-        # CONSTRAINTS
+        # ========== CONSTRAINTS ==========
         for r in range(self.tab_cons.rowCount()):
             for c in range(self.tab_cons.columnCount()):
                 widget = self.tab_cons.cellWidget(r, c)
@@ -211,7 +211,7 @@ class LPWindow(QMainWindow):
         reset_bg(self.tab_obj)
         reset_bg(self.tab_cons)
 
-        # VARS
+        # ========== VARS ==========
         for r in range(self.tab_vars.rowCount()):
             name = self.tab_vars.item(r, 0).text().strip()
             if not name:
@@ -234,7 +234,7 @@ class LPWindow(QMainWindow):
                     self.tab_vars.item(r, 2).setBackground(Qt.red)
                     errors.append(f"Proměnná {name}: chybná horní mez")
 
-        # OBJECTIVE
+        # ========== OBJECTIVE ==========
         for c in range(self.tab_obj.columnCount()):
             txt = self.tab_obj.item(0, c).text().strip()
             if txt:
@@ -244,7 +244,7 @@ class LPWindow(QMainWindow):
                     self.tab_obj.item(0, c).setBackground(Qt.red)
                     errors.append(f"Účelová funkce: neplatný koef. u x{c+1}")
 
-        # CONSTRAINTS
+        # ========== CONSTRAINTS ==========
         n_vars = self.var_spin.value()
         for r in range(self.tab_cons.rowCount()):
             for c in range(n_vars):
@@ -279,7 +279,7 @@ class LPWindow(QMainWindow):
 
             combo = self.tab_vars.cellWidget(r, 3)
             gui_type = combo.currentText()
-            vtype = "Continuous" if gui_type == "Nezáporné" else "Integer"
+            vtype = "Continuous" if gui_type == "Reálné" else "Integer"
 
             data.append(Variable(name, low, up, vtype))
         return data
@@ -474,7 +474,7 @@ class LPWindow(QMainWindow):
                 )
                 combo = self.tab_vars.cellWidget(i, 3)
                 combo.setCurrentText(
-                    "Nezáporné" if v["vtype"] == "Continuous" else "Celočíselné"
+                    "Reálné" if v["vtype"] == "Continuous" else "Celočíselné"
                 )
 
             for i, coef in enumerate(data["objective"]["coeffs"]):
