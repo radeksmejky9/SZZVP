@@ -1,6 +1,11 @@
 # LP Solver – GUI pro řešení lineárního programování
 
-Moderní aplikace s grafickým rozhraním pro řešení problémů lineárního programování (LP) s podporou více řešičů.
+Aplikace s grafickým rozhraním pro řešení problémů lineárního programování (LP) s podporou více řešičů.
+
+
+![Ukázka uživatelského rozhraní aplikace](/ukazka.png)
+
+---
 
 ## Funkce
 
@@ -10,9 +15,6 @@ Moderní aplikace s grafickým rozhraním pro řešení problémů lineárního 
 - **Ukládání a načítání** problémů do/z JSON souborů  
 - **Interpretace výsledků** s detailním popisem řešení  
 - **Rozšiřitelnost řešičů** – snadné přidání vlastního řešiče implementací abstraktní třídy  
-
-
-![Ukázka uživatelského rozhraní aplikace](/ukazka.png)
 ---
 
 ## Instalace
