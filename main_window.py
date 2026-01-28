@@ -108,15 +108,14 @@ class LPWindow(QMainWindow):
             "NÁVOD K POUŽITÍ:\n\n"
             "1. Nastavte počet proměnných a omezení v horním panelu, případně načtěte jeden z přiložených souborů pro rychlé odzkoušení funkcionality (optimal.json, infeasible.json, unbounded.json, nebo optimal2.json)\n"
             "2. Vyberte řešič\n"
-            "3. Zvolte počet proměnných a omezení\n"
-            "4. Vyplňte tabulky:\n"
+            "3. Vyplňte tabulky:\n"
             "   • Proměnné: název, dolní/horní mez, typ (Reálné/Celočíselné)\n"
             "   • Účelová funkce: koeficienty\n"
             "   • Omezení: koeficienty, relace (≤/≥/=), pravá strana\n"
-            "5. Stav tabulek lze kdykoliv uložit\n"
-            "6. Klikněte na 'Řešit'\n"
-            "7. V případě, že by řešení trvalo příliš dlouho, lze kliknout na tlačítko 'Nový' pro kompletní restart, nebo libovolně upravit hodnoty a zahájit řešení znovu\n"
-            "8. Výsledky se zobrazí v samostatném novém tabu"
+            "4. Stav tabulek lze kdykoliv uložit\n"
+            "5. Klikněte na 'Řešit'\n"
+            "6. V případě, že by řešení trvalo příliš dlouho, lze kliknout na tlačítko 'Nový' pro kompletní restart, nebo libovolně upravit hodnoty a zahájit řešení znovu\n"
+            "7. Výsledky se zobrazí v samostatném novém tabu"
         )
         help_label.setWordWrap(True)
         help_layout.addWidget(help_label)

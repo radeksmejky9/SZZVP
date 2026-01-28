@@ -17,7 +17,7 @@ Moderní aplikace s grafickým rozhraním pro řešení problémů lineárního 
 
 ### Základní závislosti
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Spuštění
@@ -38,7 +38,6 @@ solver_pulp.py         # Implementace pro PuLP
 solver_scipy.py        # Implementace pro SciPy
 solver_ortools.py      # Implementace pro OR-Tools
 solver_thread.py       # Asynchronní řešení
-requirements.txt       # Seznam Python závislostí
 README.md              # Dokumentace
 optimal.json           # Ukázkový problém LP
 optimal2.json          # Náročnější ukázkový problém
@@ -51,15 +50,14 @@ requirements.txt       # Základní závislosti
 
 1. **Nastavte počet proměnných a omezení v horním panelu, případně načtěte jeden z přiložených souborů pro rychlé odzkoušení funkcionality** (optimal.json, infeasible.json, unbounded.json, nebo optimal2.json)
 2. **Vyberte řešič**
-3. **Zvolte počet proměnných a omezení**
-4. **Vyplňte tabulky**:
+3. **Vyplňte tabulky**:
    - **Proměnné**: název, dolní/horní mez, typ
    - **Účelová funkce**: koeficienty
    - **Omezení**: koeficienty, relace (≤/≥/=), pravá strana
-5. **Stav tabulek lze kdykoliv uložit.**
-6. **Klikněte na Řešit**
-7. **V případě, že by řešení trvalo příliš dlouho lze kliknout na tlačítko Nový pro kompletní restart, nebo libovolně upravit hodnoty a zahájit řešení znovu.**
-8. **Zobrazí se výsledky v novém samostatném tabu**
+4. **Stav tabulek lze kdykoliv uložit.**
+5. **Klikněte na Řešit**
+6. **V případě, že by řešení trvalo příliš dlouho lze kliknout na tlačítko Nový pro kompletní restart, nebo libovolně upravit hodnoty a zahájit řešení znovu.**
+7. **Zobrazí se výsledky v novém samostatném tabu**
 
 ## Přidání vlastního řešiče
 
