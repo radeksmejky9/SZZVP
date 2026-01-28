@@ -10,6 +10,8 @@ Moderní aplikace s grafickým rozhraním pro řešení problémů lineárního 
 - **Ukládání a načítání** problémů do/z JSON souborů  
 - **Interpretace výsledků** s detailním popisem řešení  
 - **Rozšiřitelnost řešičů** – snadné přidání vlastního řešiče implementací abstraktní třídy  
+
+
 ![Ukázka uživatelského rozhraní aplikace](/ukazka.png)
 ---
 
